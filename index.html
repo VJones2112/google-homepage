@@ -9,8 +9,9 @@
 <meta name="description" content="This is what Google will show.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href=>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
-
+<script src="https://kit.fontawesome.com/ce93a524cb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,25 +19,42 @@
 <header>
 <div class="logo"><img class="logoimg" src="/images/glogo.png"></div>
 <div class="results">
+    <!-- <div class="searchBar"> -->
     <form>
-        <input type="search" placeholder="build this webpage">
-       
+        <input type="search" placeholder="build this webpage" name="search">
+        
+        <!-- <button type="submit" class="searchIcon"> -->
+            <!-- <i class="fa fa-search"></i> -->
+    </button>
     </form>
+    <!-- </div> -->
     <ul class="nav">
-        <li><a href="#">All</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Maps</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Shopping</a></li>
-        <li><a href="#">More</a></li>
+        <li class="active"><a href="#"><i class="fa fa-search"></i>All</a></li>
+        <li><a href="#"><i class="far fa-newspaper"></i>News</a></li>
+        <li><a href="#"><i class="fas fa-map-marker-alt"></i>Maps</a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i>Videos</a></li>
+        <li><a href="#"><i class="fas fa-tag"></i>Shopping</a></li>
+        <li><a href="#"><i class="fas fa-ellipsis-v"></i>More</a></li>
         <li class="navr"><a href="#">Settings</a></li>
         <li class="tools"><a href="#">Tools</a></li>
     </ul>
 </div>
-<div class="user"><img class="userimg" src="/images/user.jpeg"></div>
+<div class="user">
+    <div class="userBlock">
+    <div clas="fas fa-th">
+    <a href="#">
+    <i class="fas fa-th"></i>
+</div>
+    <div class="userimg">
+    <img class="userimg" src="/images/user.jpeg">
+</div>
+</a>
+</div>
+</div>
+
 </header>
-<hr>
-<main>
+<!-- <hr> -->
+<main id="main">
     <p>About 98,900,000 results (0.68 seconds)</p>
 
     <div class="results">
