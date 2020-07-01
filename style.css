@@ -5,14 +5,17 @@ html {
 
 header {
     display:flex;
-    border-bottom: 2px solid rgb(102, 102, 102);;
+    border-bottom: 1px solid rgb(102, 102, 102);;
     /* position: fixed; */
-
 }
 
-/* .logo {
+.logo {
 flex: 1;
-} */
+display: flex;
+justify-content: center;
+align-items: flex-start;
+
+}
 .logoimg {
 height: 30px;
 width: 92px;
@@ -20,16 +23,11 @@ padding: 20px;
 margin-right: 20px;
 }
 
-.results {
+.bar {
 flex: 3;
-
+margin-top: 10px;
 }
 
-/* .searchBar {
-    display: flex;
-    position: relative;
-    width: 100%;
-} */
 
 input {
     width: 600px;
@@ -43,8 +41,18 @@ input {
 
 input::placeholder{
     color: black;
+    
+    
 }
 
+.fa-search {
+    position: absolute;
+    top: 35px;
+    z-index: 1;
+    left: 166px;
+    /* color: rgb(102, 102, 102); */
+    
+}
 /* form {
     display: inline-flex;
     flex: 1 1 600px;
@@ -109,17 +117,22 @@ input::placeholder{
 
 .user {
 flex: 1;
+/* border: 1px solid red; */
+display: flex;
+justify-content: center;
+align-items: flex-start;
+/* padding: 0;
+margin: 0; */
 
 /* white-space: nowrap; */
 }
 
-.userBlock {
-    display: block;
-}
 
 .user i {
-    
+    flex: 1;
     margin-right: 5px;
+    padding: 20px;
+    
     
 }
 
@@ -129,9 +142,12 @@ flex: 1;
 }
 
 .userimg {
-    height: 30px;
+    height: 20px;
     padding: 20px;
+    flex: 1;
     
+    /* margin-left: 0; */
+    padding-left: 2px;
 }
 
 /* hr {
@@ -139,11 +155,12 @@ flex: 1;
     width: 1830px;
     /* position: relative;
     top: 40px; */
-} */
+
 
 #main {
     width: 652px;
     margin: 0 auto;
+    
     /* min-width: 833px; */
     /* margin-left: 164px; */
     /* position: relative;
@@ -157,6 +174,9 @@ main a {
 
 .results {
     
+    margin: 0 auto;
+    max-width: 833px;
+    margin-left: 164px;
         /* clip: rect(1px, 1px, 1px, 1px); */
 }
 
@@ -229,10 +249,6 @@ h3 {
     justify-content: flex-end;
 }
 
-.vidfoot p {
-    
-}
-
 .alsoask {
     width: 652px;
 }
@@ -256,6 +272,13 @@ h3 {
     
 }
 
+.alsoask a {
+    text-decoration: none;
+    color: #5F6368;
+}
+
+
+
 .cap {
     border:none;
     outline-color: none;
@@ -264,6 +287,54 @@ h3 {
     font-style: italic;
     color: rgb(112, 117, 122);;
 }
+
+.gray {
+    color: #5F6368;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.searches {
+    display: flex;
+}
+
+.searchrel li {
+    list-style-type: none;
+    font-size: 14px;
+    color: rgb(26, 13, 171);
+    padding: 3px 32px 3px 0;
+    margin-left: -35px;
+    
+}
+
+.searchrel a {
+    text-decoration: none;
+}
+
+.searchrel a:hover {
+    text-decoration-line: underline;
+}
+
+.gooohead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gooohead>* {
+    flex: 1;
+    height: 30px;
+    align-self: center;
+    word-spacing: 4rem;
+}
+/* .gooohead i {
+    flex:1;
+    align-self: center;
+} */
+
+
+
+
 
 footer {
     font-size: 14px;
