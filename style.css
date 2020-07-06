@@ -5,11 +5,11 @@ html {
 
 header {
     border-bottom: 1px solid #ebebeb;
-    /* position: fixed; */
 }
 
 .toptop {
     display: flex;
+    /* position: fixed; */
 }
 
 .logo {
@@ -27,6 +27,11 @@ header {
 .bar {
     flex: 3;
     margin-top: 15px;
+}
+
+input:hover {
+    box-shadow:0px 0px 8px #888888;
+    border-radius: 24px;
 }
 
 input {
@@ -59,6 +64,7 @@ input::placeholder {
     color: dodgerblue;
     font-size: 20px;
     padding-right: 5px;
+    left: 760px;
 }
 
 form .fa-search {
@@ -68,22 +74,29 @@ form .fa-search {
     color: dodgerblue;
     font-size: 20px;
     padding-right: 5px;
+    left: 761px;
 }
 
 .user {
     flex: 0 1 100px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.user>* {
-    align-self: center;
-}
-
-.user i {
+.usergrid {
     flex: 1;
-    margin-right: 5px;
-    padding: 20px;
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    
+}
+
+.userimgdiv {
+    flex: 1;
+    height: 30px;
+    width: 30px;
+    text-align: center;
 }
 
 .user a {
@@ -94,15 +107,11 @@ form .fa-search {
 .user a:hover {
     background-color: #ebebeb;
     border-radius: 50%;
-    height: 25px;
-    width: 25px;
+    padding: 10px;
 }
 
 .userimg {
     height: 20px;
-    padding: 20px;
-    flex: 1;
-    padding-left: 2px;
 }
 
 .nav {
@@ -190,6 +199,10 @@ p {
     margin-bottom: 3px;
 }
 
+.restitle a:hover{
+    text-decoration: underline;
+}
+
 .videos {
     display: inline-flex;
     justify-content: space-between;
@@ -213,6 +226,10 @@ iframe {
     height: 120px;
 }
 
+h2 {
+    font-weight: 200;
+}
+
 h3 {
     font-size: 20px;
     margin: 5px;
@@ -223,6 +240,10 @@ h3 {
     height: 90px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.subtitle a:hover {
+    text-decoration-line: underline;
 }
 
 .vidfoot {
@@ -244,6 +265,8 @@ strong {
 
 .alsoask {
     width: 652px;
+    display: flex;
+    flex-direction: column;
 }
 
 .alsoask h2 {
@@ -270,7 +293,7 @@ strong {
 .alsoask .fa-caret-down {
     color: #5F6368;
     position: absolute;
-    right: 150px;
+    left: 800px;
 }
 
 .cap {
@@ -280,7 +303,6 @@ strong {
     text-align: right;
     font-style: italic;
     color: rgb(112, 117, 122);
-    ;
 }
 
 .searchp {
@@ -371,4 +393,9 @@ footer ul {
 footer a {
     text-decoration: none;
     color: #5F6368;
+}
+
+.fa-circle {
+    color: #5F6368;
+    margin-right: 5px;
 }
