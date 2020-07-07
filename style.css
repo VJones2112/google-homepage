@@ -27,6 +27,7 @@ input {
     height: 44px;
     padding-left: 14px;
     font-size: 14px;
+    border-color: #ebebeb;
 }
 
 input::placeholder {
