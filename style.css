@@ -9,19 +9,11 @@ header {
 
 .toptop {
     display: flex;
-    /* position: fixed; */
-}
-
-.logo {
-    flex: 0 1 100px;
-    display: flex;
-    padding: 20px 30px;
 }
 
 .logoimg {
-    height: 30px;
+    padding: 20px 30px;
     width: 92px;
-    align-self: center;
 }
 
 .bar {
@@ -29,22 +21,21 @@ header {
     margin-top: 15px;
 }
 
-input:hover {
-    box-shadow:0px 0px 8px #888888;
-    border-radius: 24px;
-}
-
 input {
-    width: 600px;
+    width: 652px;
     border-radius: 24px;
     height: 44px;
-    padding-top: 5px;
     padding-left: 14px;
     font-size: 14px;
 }
 
 input::placeholder {
     color: black;
+}
+
+input:hover {
+    box-shadow:0px 0px 8px #888888;
+    border-radius: 24px;
 }
 
 .fa-times {
@@ -63,8 +54,7 @@ input::placeholder {
     top: 36px;
     color: dodgerblue;
     font-size: 20px;
-    padding-right: 5px;
-    left: 760px;
+    left: 810px;
 }
 
 form .fa-search {
@@ -73,8 +63,8 @@ form .fa-search {
     top: 36px;
     color: dodgerblue;
     font-size: 20px;
-    padding-right: 5px;
-    left: 761px;
+    left: 810px;
+    /* Why can I use the left: 760px for both fa-microphone and search and they don't overlap? */
 }
 
 .user {
@@ -82,25 +72,24 @@ form .fa-search {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    
 }
 
 .usergrid {
     flex: 1;
     height: 30px;
     width: 30px;
-    align-self: center;
-    
+    margin-top: 10px;
 }
 
 .userimgdiv {
     flex: 1;
     height: 30px;
     width: 30px;
-    text-align: center;
 }
 
 .user a {
-    text-decoration: none;
     color: #5F6368;
 }
 
@@ -117,7 +106,7 @@ form .fa-search {
 .nav {
     list-style-type: none;
     display: flex;
-    margin-left: 169px;
+    margin-left: 159px;
     margin-bottom: 0;
 }
 
@@ -137,7 +126,7 @@ form .fa-search {
 }
 
 .navr {
-    padding-left: 20px;
+    padding-left: 70px;
 }
 
 .nav a {
@@ -147,12 +136,12 @@ form .fa-search {
 
 .tools a:hover {
     background-color: lightgray;
-    padding: 5px;
+    padding: 5px 10px;
     border: 1px solid gray;
 }
 
 #main {
-    width: 652px;
+    width: 800px;
 }
 
 main a {
@@ -187,7 +176,6 @@ a {
 .src,
 .resdes,
 p {
-    font-size: 13px;
     line-height: 20px;
     margin: 0;
 }
@@ -206,7 +194,6 @@ p {
 .videos {
     display: inline-flex;
     justify-content: space-between;
-    height: 300px;
     width: 652px;
 }
 
@@ -222,7 +209,6 @@ iframe {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     width: 211px;
-    margin-right: 10px;
     height: 120px;
 }
 
@@ -238,8 +224,7 @@ h3 {
 
 .subtitle {
     height: 90px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin:0 10px;
 }
 
 .subtitle a:hover {
@@ -247,14 +232,12 @@ h3 {
 }
 
 .vidfoot {
-    margin: 5px;
     position: relative;
     display: flex;
     height: 70px;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
     color: #808080;
 }
 
@@ -265,13 +248,10 @@ strong {
 
 .alsoask {
     width: 652px;
-    display: flex;
-    flex-direction: column;
 }
 
 .alsoask h2 {
     border: solid 1px #ebebeb;
-    line-height: 26px;
     padding: 9px 16px;
     margin-bottom: 0;
     border-top-left-radius: 8px;
@@ -286,19 +266,16 @@ strong {
 }
 
 .alsoask a {
-    text-decoration: none;
     color: #5F6368;
 }
 
 .alsoask .fa-caret-down {
-    color: #5F6368;
+    color: #70757A;
     position: absolute;
     left: 800px;
 }
 
 .cap {
-    border: none;
-    outline-color: none;
     font-size: 11px;
     text-align: right;
     font-style: italic;
@@ -307,7 +284,7 @@ strong {
 
 .searchp {
     font-size: 20px;
-    margin-bottom: 3px;
+    padding-top: 20px;
 }
 
 .searches {
@@ -317,15 +294,9 @@ strong {
 
 .searchrel li {
     list-style-type: none;
-    font-size: 14px;
-    color: rgb(26, 13, 171);
-    padding: 3px 32px 3px 0;
+    padding: 5px 32px 5px 0;
     margin-left: -35px;
     font-weight: 600;
-}
-
-.searchrel a {
-    text-decoration: none;
 }
 
 .searchrel a:hover {
@@ -333,19 +304,12 @@ strong {
 }
 
 .gooo {
-    display: flex;
-    flex-direction: column;
-    width: 652px;
     text-align: center;
     margin: 10px;
 }
 
 .gooo table {
     margin: 0 auto;
-}
-
-.gooo thead {
-    display: flex;
 }
 
 .goooimg {
@@ -360,7 +324,10 @@ strong {
 
 .gooo td {
     padding: 5px;
-    position: relative;
+}
+
+.next {
+    margin-left: 20px;
 }
 
 .gooo a {
@@ -372,10 +339,9 @@ strong {
 }
 
 footer {
-    font-size: 14px;
     line-height: 40px;
     background-color: rgb(242, 242, 242);
-    width: 1830px;
+    width: 100%;
 }
 
 footer p {
